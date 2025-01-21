@@ -2,6 +2,11 @@ from pymongo import DESCENDING, MongoClient
 from bson import ObjectId
 from bot.config import Telegram
 import re
+from dotenv import load_dotenv
+import os
+from pymongo import MongoClient
+from config import DATABASE_URL
+
 
 
 class Database:
