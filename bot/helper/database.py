@@ -8,7 +8,7 @@ class Database:
     def __init__(self):
         MONGODB_URI = Telegram.DATABASE_URL
         self.mongo_client = MongoClient(MONGODB_URI)
-        self.db = self.mongo_client["ThiraiWebTG"]
+        self.db = self.mongo_client["surftg"]
         self.collection = self.db["playlist"]
         self.config = self.db["config"]
         self.files = self.db["files"]
